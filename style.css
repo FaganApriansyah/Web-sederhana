@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #fcfbf7; 
+    color: #3b2525;
+    line-height: 1.6;
+}
+
+/* Container Utama */
+.konten-utama {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px; 
+}
+
+header {
+    background-color: brown; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #000000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .logo img {
+    height: 45px;
+    width: auto;
+}
+
+header .logo h1 {
+    font-size: 1.4rem;
+    color: #f5e8e7;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #a92222; 
+    color: #ffffff;            
+    
+   
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.hero-section h1 {
+    font-size: 2.6rem;
+    color: #ffffff;            
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.hero-section .semboyan {
+    font-size: 1.2rem;
+    color: #f0f0f0;            
+    font-style: italic;
+}
+
+
+.pembatas {
+    display: none; 
+}
+
+
+.judul-section-b {
+    color: brown;
+    margin: 40px 0 30px 0;
+    font-size: 1.8rem;
+}
+
+
+.grid-layanan {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+.kartu {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #a86b6b; 
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.kartu h3 {
+    color: #c0392b;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.kartu p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+footer {
+    background-color: brown; 
+    color: #ffffff;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer .kolom-kiri strong {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+footer .kolom-kiri p {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-top: 4px;
+}
+footer .kolom-kanan {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+    .grid-layanan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .grid-layanan {
+        grid-template-columns: 1fr; 
+        gap: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        
+    }
+
+}
